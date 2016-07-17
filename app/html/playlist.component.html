@@ -1,0 +1,14 @@
+<table class="table table-hover">
+    <thead style="font-weight: bold;">
+    <td>ID</td>
+    <td>TITLE</td>
+    <td>DESCRIPTION</td>
+    </thead>
+    <tbody>
+    <tr *ngFor="#v of p_list" (click)="onSelect(v)">
+        <td>{{v.id}}</td>
+        <td>{{v.title}}</td>
+        <td>{{v.desc}}</td>
+    </tr>
+    </tbody>
+</table>
